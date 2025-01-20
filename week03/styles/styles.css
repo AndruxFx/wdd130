@@ -14,5 +14,11 @@ p{
     font-family: "Abel", serif;
     font-weight: 400;
     font-style: normal;
-      "wdth" 100;
+
+}
+footer{
+    border-top: 1px solid #757575;
+}
+footer img{
+    float: left;
 }
