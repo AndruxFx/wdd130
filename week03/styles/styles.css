@@ -1,7 +1,20 @@
 /*------------ WEEK 03 ------------*/
+
 :root{
     --primary-color: #0b4f6c;
     --secondary-color:#fbfbff;
     --accent1-color:#20bf55;
     --accent2-color:#01baef;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Roboto", serif;
+    font-weight: 700
+}
+p{
+    font-family: "Roboto", serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
 }
