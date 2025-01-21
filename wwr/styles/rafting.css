@@ -1,0 +1,69 @@
+:root{
+    --primary-color: #0b4f6c;
+    --secondary-color:#fbfbff;
+    --accent1-color:#20bf55;
+    --accent2-color:#01baef;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Roboto", serif;
+    font-weight: 700;
+    color: var(--secondary-color);
+}
+p{
+    font-family: "Abel", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--secondary-color);
+}
+footer nav a {
+    text-decoration: none;
+}
+body{
+    max-width: 2000px;
+    margin: 0 auto;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.hero {
+    position: relative;
+    display: block;
+    
+
+}
+
+.hero-image{
+    width: 100%;
+    height: auto;
+    position: relative;
+    display: block;
+}
+
+
+.hero h1 {
+font-size: 3em;
+top: 0%;
+left: 1%;
+display: block;
+margin: auto;
+position: absolute;
+max-width: 1024px;
+
+
+
+}
+
+.hero article {
+    position: absolute;
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 1.5em;
+    top: 40%;   
+}
+
+.hero .floating-image {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 100px; /* Ajusta el tamaño según necesites */
+    z-index: 2; /* Asegurarnos de que la imagen esté por encima */
+}
