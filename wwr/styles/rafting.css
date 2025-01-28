@@ -20,14 +20,38 @@ p{
 footer nav a {
     text-decoration: none;
 }
+header {
+display: grid;
+grid-template-columns: 1fr 8fr;
+justify-content: center;
+align-items: center;
+
+
+}
+.logo-box img {
+    border:2px solid #0b4f6c;
+    border-radius: 20px;
+}
+.navigation {
+display: flex;
+justify-content: space-around;
+background-color: #0b4f6c;
+
+}
+a {
+font-size: 1.3rem;
+text-decoration: none;
+padding: 25px;
+color: var(--secondary-color);
+}
 body{
-    max-width: 1024px;
+    max-width: 1280px;
     margin: 0 auto;
     padding: 10px;
     box-sizing: border-box;
 }
 main{
-    width: 1024px;
+    width: 100%;
     height: auto;
 }
 div.hero{
@@ -50,7 +74,9 @@ div.hero{
     z-index: 1;
 
 }
-
+.hero img {
+    width: 100%;
+} 
 .hero article {
     background-color: rgb(11, 79, 108 , 0.5);
     display: block;
@@ -73,6 +99,72 @@ z-index: 1;
 .hero p {
     color: var(--secondary-color);
 }
-h2 {
-    color: var(--primary-color);
+/*History*/
+.flex-history {
+    display: flex;
+    padding: 20px;
+    margin-top: 20px;
+    background-color: var(--primary-color);
+    border-radius: 20px;
+    align-items: center;
+    border: 8px double var(--secondary-color) 
 }
+.flex-history p {
+text-align: justify ;
+padding: 10px;
+margin: 10px;
+color: var(--secondary-color);
+}
+.flex-history img {
+width: 150px;
+border:solid 2px #01baef;
+    }
+.main-column {
+    color: var(--primary-color);
+    text-align: center;
+} 
+.adventure-grid {
+    display: grid;
+    grid-template-rows: 0.1fr 1fr;
+    background-color: var(--primary-color);
+    margin: 20px;
+    
+} 
+.adventure-grid h2{
+text-align: center;
+border-bottom: solid 1px var(--secondary-color);
+
+}
+.adventure-flex{
+    display: flex;
+    background-color: var(--primary-color);
+    justify-content: center;
+    gap: 20px;
+    padding: 12px;
+
+}
+section img{
+    width: 220px;
+    border: 1px solid var(--accent2-color);
+}
+.adventure-flex figure {
+    margin: 0;
+}
+figcaption {
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+    text-align: center;
+} 
+footer p{
+    margin: 50px;
+    padding:10px;
+    border-top: 1px solid var(--primary-color);
+    font-size: 1.5rem;
+    text-align: center;
+}
+footer {
+    background-color: rgb(0, 0, 0 , 0.1);
+}
+.social-links{
+text-align: center;
+} 
