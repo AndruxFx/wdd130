@@ -131,8 +131,8 @@ border:solid 2px #01baef;
     
 } 
 .adventure-grid h2{
-text-align: center;
-border-bottom: solid 1px var(--secondary-color);
+    text-align: center;
+    border-bottom: solid 1px var(--secondary-color);
 
 }
 .adventure-flex{
@@ -141,6 +141,7 @@ border-bottom: solid 1px var(--secondary-color);
     justify-content: center;
     gap: 20px;
     padding: 12px;
+    flex-wrap: wrap;
 
 }
 section img{
