@@ -174,3 +174,69 @@ footer p{
     text-align: center;
     
 } 
+/*Contact us h1 title*/
+.contact-h1 {
+    color: var(--primary-color);
+    text-align: center;
+    size: 1rem;   
+}
+/*company information box*/
+.contact-information-box {
+    display: grid;
+    padding: 1rem;
+    max-width: 500px;
+    border: solid 2px var(--primary-color);
+    border-radius: 20px;
+    text-align: center;
+    align-items: center;
+}
+.information-box-container {
+    display: flex;
+    justify-content: center;
+}
+th {
+    text-align: right;
+    color: var(--primary-color);
+}
+td {text-align: left;
+    color: rgb(73, 72, 72)
+}
+.map-container {
+    margin: 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    margin-bottom: 60px;
+}
+.meet-the-team-header {
+    color: var(--primary-color);
+    text-align: center;
+}
+.employees-container {
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    gap: 100px;
+    max-width: 100%;
+}
+.employees-container img {
+    max-height: 174px;
+}
+.employees-container figcaption {
+    color: var(--primary-color);
+    font-size: 1rem;
+    max-width: 15rem;
+    text-align: center;
+    background-color: #474444;
+    color: var(--secondary-color);
+
+
+}
+.meet-section {
+    padding: 10px;
+    box-shadow: 0 0 0 3px #ddd;
+    box-shadow:0 4px 8px #474444;
+    border-radius: 20px;
+    margin-bottom: 60px;
+}
