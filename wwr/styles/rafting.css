@@ -222,6 +222,8 @@ td {text-align: left;
 }
 .employees-container img {
     max-height: 174px;
+    border-color: #474444;
+    border-radius: 10px;
 }
 .employees-container figcaption {
     color: var(--primary-color);
@@ -239,4 +241,8 @@ td {text-align: left;
     box-shadow:0 4px 8px #474444;
     border-radius: 20px;
     margin-bottom: 60px;
+}
+.client-form-container h2{
+  color: var(--primary-color);
+ 
 }
