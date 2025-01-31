@@ -246,3 +246,41 @@ td {text-align: left;
   color: var(--primary-color);
  
 }
+.client-form-container {
+    border: 2px solid var(--primary-color);
+    padding: 20px;
+}
+.name-container {
+    border: 0;
+    font-size: 1.2em;
+}
+.email-container {
+    border: 0;
+    font-size: 1.2em;
+}
+.input-name {
+    width: 100%;
+    max-width: 300px; 
+    height: 40px; 
+    padding: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    box-sizing: border-box;
+}
+.input-email {
+    width: 100%;
+    max-width: 300px; 
+    height: 40px; 
+    padding: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    box-sizing: border-box;
+}
+.contact-container {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    font-size: 1.2em;
+}
