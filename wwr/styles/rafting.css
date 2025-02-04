@@ -341,3 +341,17 @@ td {text-align: left;
  
     
 }
+.home{
+    display: flex;
+    justify-content: center;
+
+}
+.home__main-img{
+    width: 100%;
+    position: relative;
+}
+.home__header{
+    color: var(--primary-color);
+    position: absolute;
+    z-index: 1;
+}
