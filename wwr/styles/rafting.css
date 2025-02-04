@@ -365,11 +365,11 @@ td {text-align: left;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    width: 1100px;
+    width: 1160px;
     height: 200px;
-    
     position: absolute;
-    background-color:rgb(0, 0, 0, 0.7);
+    background-color:rgb(0, 0, 0, 0.3);
+    backdrop-filter: blur(20px);
     top:400px;
     padding: 50px;
 }
@@ -395,4 +395,72 @@ td {text-align: left;
     padding: 10px 60px;
     background-color:transparent;
 }
- 
+.promos-container{
+    max-width: 1160px;
+    width: 100%;
+    flex-direction: row;
+    display: flex;
+    position: absolute;
+    z-index: 1;
+    top: 750px;
+    justify-content:space-evenly;
+    gap: 150px;
+
+}
+.promos-container__offerts-container {
+    display: flex;
+    width: 700px;
+    height: 400px;
+    background-color:transparent;
+    border-radius: 20px;
+    align-items: center;
+    border: solid 2px white;
+    
+}
+.promos-container__left {
+    display: flex;
+    box-sizing: border-box;
+    padding: 10px;
+    flex-direction: column;
+    background-color: var(--primary-color);
+    width: 200px;
+    border-top-left-radius:18px;
+    border-bottom-left-radius:18px; 
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+
+}
+.promos-container__left h2 {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.promos-container__left p {
+    border-top: 1px solid white;
+    color: white;
+    text-align: center;
+}
+
+
+.promos-container__right {
+    display: flex;
+    flex-direction: column;
+    border-top-right-radius: 18px;
+    border-bottom-right-radius: 18px;
+    background-color: rgb(0, 0, 0 , 0.6);
+    width: 100%;
+    height: 100%;
+    align-items:center;
+    backdrop-filter: blur(20px);
+
+}
+
+.btn__reclaim {
+    font-family: "Roboto",serif;
+    font-size: 1.5rem;
+    border: solid 2px var(--secondary-color);
+    border-radius: 50px;
+    padding: 7px 30px;
+    background-color: rgb(226, 4, 4);
+}
