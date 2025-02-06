@@ -343,7 +343,6 @@ td {text-align: left;
 }
 .home{
     display: flex;
-    justify-content: top;
     align-items: center;
     flex-direction: column;
 
@@ -395,6 +394,7 @@ td {text-align: left;
     padding: 10px 60px;
     background-color:transparent;
 }
+
 .promos-container{
     max-width: 1160px;
     width: 100%;
@@ -402,7 +402,7 @@ td {text-align: left;
     display: flex;
     position: absolute;
     z-index: 1;
-    top: 750px;
+    top: 1100px;
     justify-content:space-evenly;
     gap: 40px;
 
@@ -465,7 +465,8 @@ td {text-align: left;
     background-color: rgb(226, 4, 4);
 }
 .btn__reclaim:hover {
-    background-color: transparent;
+    background-color:#474444;
+    
 }
 .promos-container__newsletter-form {
     display: flex;
@@ -496,3 +497,51 @@ td {text-align: left;
     color: white;
     font-size: 1.5rem;
 }
+.btn__container--suscribe {
+    border:1px solid white;
+    padding: 10px 20px  ;
+    border-radius: 10px;
+}
+.btn__container--suscribe:hover {
+    border:1px solid lime;
+    color: lime;
+    padding: 10px 20px  ;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.btn__container--suscribe::after {
+    content:"✔";
+    border-radius: 100% ;   
+}
+.purpose-container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    top: 780px;
+    background-color: transparent;
+
+}
+.banner {
+    position: relative;
+    top: 10px;
+    z-index: 2;
+    max-width: 1260px;
+    width: 1260px;
+    border-top: solid 2px white;
+    border-bottom: solid 2px white;
+}
+
+.purpose-container p {
+    position: absolute;
+    width: 1000px;
+    z-index: 3;
+    top:15px;
+    color: var(--secondary-color);
+    font-size: 1.25rem;
+    background-color: rgb(0, 0, 0 , 0.6);
+    padding: 20px ;
+}
+
