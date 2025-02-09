@@ -347,19 +347,54 @@ td {text-align: left;
     flex-direction: column;
 
 }
-.home__main-img{
+.btn__reclaim {
+    font-family: "Roboto",serif;
+    font-size: 1.5rem;
+    border: solid 2px var(--secondary-color);
+    border-radius: 50px;
+    padding: 7px 30px;
+    background-color: rgb(226, 4, 4);
+}
+.btn__reclaim:hover {
+    background-color:#474444;
+    
+}
+
+/*MAIN GRID*/
+.main-grid__container{
+    display: grid;
+    grid-template-columns: 1.5fr 1fr; 
+    grid-template-rows: 200px 300px 600px 600px;
     width: 100%;
+    height: 100%;
     position: relative;
+    padding: 20px;
+    
+}
+.home__main-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;  
 }
 .home__header{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    grid-column: 1 / span 2;
+}
+.home__header-h1{
     color: var(--primary-color);
     position: absolute;
     margin-top: 70px;
     font-size: 3rem;
     z-index: 1;
-    
+    grid-row: 1;
+    text-align: center
+    ;
 }
 .btn__container {
+    grid-column: 1/span 2;
+    grid-row: 2;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -369,8 +404,23 @@ td {text-align: left;
     position: absolute;
     background-color:rgb(0, 0, 0, 0.3);
     backdrop-filter: blur(20px);
-    top:400px;
     padding: 50px;
+}
+.btn__container--suscribe {
+    border:1px solid white;
+    padding: 10px 20px  ;
+    border-radius: 10px;
+}
+.btn__container--suscribe:hover {
+    border:1px solid lime;
+    color: lime;
+    padding: 10px 20px  ;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.btn__container--suscribe::after {
+    content:"✔";
+    border-radius: 100% ;   
 }
 .btn__container-title {
     font-size: 2rem;
@@ -394,17 +444,13 @@ td {text-align: left;
     padding: 10px 60px;
     background-color:transparent;
 }
-
 .promos-container{
-    max-width: 1160px;
-    width: 100%;
-    flex-direction: row;
     display: flex;
-    position: absolute;
+    align-items: center;
+    grid-row: 4;
+    width: 100%;
     z-index: 1;
-    top: 1100px;
-    justify-content:space-evenly;
-    gap: 40px;
+   margin: 40px;
 
 }
 .promos-container__offerts-container {
@@ -455,27 +501,18 @@ td {text-align: left;
     backdrop-filter: blur(20px);
 
 }
-
-.btn__reclaim {
-    font-family: "Roboto",serif;
-    font-size: 1.5rem;
-    border: solid 2px var(--secondary-color);
-    border-radius: 50px;
-    padding: 7px 30px;
-    background-color: rgb(226, 4, 4);
-}
-.btn__reclaim:hover {
-    background-color:#474444;
-    
-}
 .promos-container__newsletter-form {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    width: 70%;
     padding: 40px;
+    margin: 40px;
     background-color: rgb(0, 0, 0 , 0.6);
+    z-index: 1;
+    grid-row: 3 / span 2;
+    grid-column: 2 ;
 }
 .promos-container__newsletter-form h3 {
     font-size: 2rem;
@@ -497,51 +534,48 @@ td {text-align: left;
     color: white;
     font-size: 1.5rem;
 }
-.btn__container--suscribe {
-    border:1px solid white;
-    padding: 10px 20px  ;
-    border-radius: 10px;
-}
-.btn__container--suscribe:hover {
-    border:1px solid lime;
-    color: lime;
-    padding: 10px 20px  ;
-    border-radius: 10px;
-    transition: 0.5s;
-}
-.btn__container--suscribe::after {
-    content:"✔";
-    border-radius: 100% ;   
+.welcome-container{
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;    
+    align-items: center;
+    grid-column: 1;
+    grid-row: 3 ;
+    z-index: 1;
+    padding-top:40px ;
+
 }
 .purpose-container {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
+    box-sizing: border-box;
     align-items: center;
     justify-content: center;
-    max-width: 100%;
-    top: 780px;
-    background-color: transparent;
+    background-color: rgb(0, 0, 0, 0.3);
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    margin-left: 40px ;
+    margin-right: 40px ;
+    border: 2px solid white;
 
 }
-.banner {
-    position: relative;
-    top: 10px;
-    z-index: 2;
-    max-width: 1260px;
-    width: 1260px;
-    border-top: solid 2px white;
-    border-bottom: solid 2px white;
+.purpose-container h2 {
+    text-align: center;
+    padding: 10px;
 }
-
+.purpose-container img {
+    width: 280px;
+    float:right;
+    margin-right: 30px ;
+    margin-left: 10px;
+    border-radius: 20px;
+    
+}
 .purpose-container p {
-    position: absolute;
-    width: 1000px;
-    z-index: 3;
-    top:15px;
-    color: var(--secondary-color);
-    font-size: 1.25rem;
-    background-color: rgb(0, 0, 0 , 0.6);
-    padding: 20px ;
-}
+    color: white;
+    font-size: 1.2rem;
+    margin-left: 30px;
 
+
+
+}
